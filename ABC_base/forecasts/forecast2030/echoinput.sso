@@ -1,5 +1,5 @@
 SS-V3.24U-safe;_08/29/2014;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.2_Win64
-Wed Feb 24 10:00:01 2021
+Wed Feb 24 10:50:02 2021
 
 bgill.2017_dat.dat  datfilename
 bgill.2017_control.ctl  ctlfilename
@@ -381,13 +381,13 @@ Forecast selected; next 20 input values will be read as a block then parsed and 
 3  HarvestPolicy 
 0.4  H4010_top 
 0.1  H4010_bot 
-0.857  H4010_scale 
+0.788  H4010_scale 
 3 N forecast loops (1-3) (recommend 3)
 3 First forecast loop with stochastic recruitment (recommend 3)
 0 Forecast loop control #3 (reserved for future use) 
 0 Forecast loop control #4 (reserved for future use) 
 0 Forecast loop control #5 (reserved for future use) 
-2021  Fcast_Cap_FirstYear for caps and allocations (should be after any fixed inputs) 
+2030  Fcast_Cap_FirstYear for caps and allocations (should be after any fixed inputs) 
 0  Impl_Error_Std 
 0  Do_Rebuilder 
 1999  Rebuild_Ydecl 
@@ -407,9 +407,9 @@ Now read cap for each fleet, then cap for each area (even if only 1 area), then 
  0 0 0
  calculated number of allocation groups 0
  Allocation among groups (N entries must match number of allocation groups created) 
-12 N_Fcast_input_catches 
+39 N_Fcast_input_catches 
 2 # basis for input Fcast catch:  2=dead catch; 3=retained catch; 99=input Hrate(F); -1=read fleet/time specific (bio/num units are from fleetunits; note new codes in SSV3.20)
-Now read 12 of fixed forecast catches (yr, seas, fleet, (basis,) catch_or_F) 
+Now read 39 of fixed forecast catches (yr, seas, fleet, (basis,) catch_or_F) 
  Fcast_catches_input 
  2017 1 1 11.9159
  2017 1 2 24.4905
@@ -423,6 +423,33 @@ Now read 12 of fixed forecast catches (yr, seas, fleet, (basis,) catch_or_F)
  2020 1 1 24.02
  2020 1 2 37.68
  2020 1 3 29.9837
+ 2021 1 1 88.15
+ 2021 1 2 17.17
+ 2021 1 3 71.9
+ 2022 1 1 86.94
+ 2022 1 2 16.98
+ 2022 1 3 70.9
+ 2023 1 1 85.77
+ 2023 1 2 16.78
+ 2023 1 3 69.93
+ 2024 1 1 84.64
+ 2024 1 2 16.57
+ 2024 1 3 68.99
+ 2025 1 1 83.65
+ 2025 1 2 16.38
+ 2025 1 3 68.16
+ 2026 1 1 82.61
+ 2026 1 2 16.17
+ 2026 1 3 67.29
+ 2027 1 1 81.61
+ 2027 1 2 15.95
+ 2027 1 3 66.45
+ 2028 1 1 80.76
+ 2028 1 2 15.76
+ 2028 1 3 65.73
+ 2029 1 1 79.85
+ 2029 1 2 15.56
+ 2029 1 3 64.97
 Processed 
  11.9159 2
  24.4905 2
@@ -436,39 +463,39 @@ Processed
  24.02 2
  37.68 2
  29.9837 2
+ 88.15 2
+ 17.17 2
+ 71.9 2
+ 86.94 2
+ 16.98 2
+ 70.9 2
+ 85.77 2
+ 16.78 2
+ 69.93 2
+ 84.64 2
+ 16.57 2
+ 68.99 2
+ 83.65 2
+ 16.38 2
+ 68.16 2
+ 82.61 2
+ 16.17 2
+ 67.29 2
+ 81.61 2
+ 15.95 2
+ 66.45 2
+ 80.76 2
+ 15.76 2
+ 65.73 2
+ 79.85 2
+ 15.56 2
+ 64.97 2
  -1 0
  -1 0
  -1 0
  -1 0
  -1 0
  -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 0
- -1 3.76618e+174
- -1 7.48269e+247
  done reading forecast 
 
 
@@ -722,16 +749,16 @@ Create reverse pointers to discard observations
 
 **************************************
  ready to do biological and selectivity calculations once 
- initial bio parameters:  0.063 12 53.4684 0.0233027 0.215077 0.0956218 0.065 12 46.0797 0.0405396 0.250653 0.0636637 1.132e-005 3.1006 33.4 -0.35 159.473 95 1.132e-005 3.1006 0 0 0 0
+ initial bio parameters:  0.063 12 53.4881 0.0233256 0.214908 0.0952327 0.065 12 46.0488 0.0402406 0.249157 0.0665965 1.132e-005 3.1006 33.4 -0.35 159.473 95 1.132e-005 3.1006 0 0 0 0
   growth factors that cannot be time-varying: 
 seasonal K:  1 1
 seasonal wtlen adjuster 
  1 1 1 1 1 1 1 1
  1 1 1 1 1 1 1 1
-CV_at_age_min(for each morph and gender)  0.215077 0.250653
-CV_at_age_max(for each morph and gender)  0.0956218 0.0636637
-Adjusted size at maxage: 54.7072
-Adjusted size at maxage: 46.4033
+CV_at_age_min(for each morph and gender)  0.214908 0.249157
+CV_at_age_max(for each morph and gender)  0.0952327 0.0665965
+Adjusted size at maxage: 54.7255
+Adjusted size at maxage: 46.3781
  did natmort 
  0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063
  0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065
@@ -739,5 +766,5 @@ Adjusted size at maxage: 46.4033
  made the age_age' key 
 bias_adjustment vector:  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 start initial conditions 
-Adjusted size at maxage: 54.7072
-Adjusted size at maxage: 46.4033
+Adjusted size at maxage: 54.7255
+Adjusted size at maxage: 46.3781

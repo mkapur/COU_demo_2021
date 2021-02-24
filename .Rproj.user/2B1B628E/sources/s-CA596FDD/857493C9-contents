@@ -56,25 +56,22 @@ SS_autoForecastTEMP <- function(rootdir,
       
       ## add zeroes to end of par file
       mpar <- readLines("ss3.par")
-      LOI <- grep("Fcast",mpar)+1 ## get line(s) containing data after fcast
+      LOI <- grep("Fcast",mpar)+1 ## get line(s) containing data after fcast; this might vary depending on # years
       NewLine <- strsplit(mpar[LOI],"0 ") ## split elements
-      # length(NewLine[[1]]);length(NewLine[[2]])
-      
+
       for(a in 1:length(NewLine)){
         ltemp <- length(NewLine[[a]])
         NewLine[[a]][1:ltemp] <- " " ## overwrite all fcast values
         NewLine[[a]][1:(ltemp+(forecast_start-2-replist0$endyr))] <- 0.000000000000 ## ! need to custom this 5
         mpar[LOI][a] = paste0(NewLine[[a]], collapse = " ")
       }
-      # NewLine <- strsplit(mpar[LOI],"0 ") ## split elements
-      # length(NewLine[[1]]);length(NewLine[[2]])
       writeLines(text=mpar, con="ss3.par") ## save it
     }
     
     ## copy from previous year so as to retain proper catches
     if(t>1){
       file.copy(list.files(
-        paste0(rootdir,"/",paste0("forecasts/forecast2021")),
+        paste0(rootdir,"/",paste0("forecasts/forecast",forecast_start)),
         full.names = TRUE,
         recursive = TRUE), to = base_temp, overwrite = TRUE)
       
@@ -100,7 +97,8 @@ SS_autoForecastTEMP <- function(rootdir,
     fore$FirstYear_for_caps_and_allocations <- forecast_start+(t-1)
     fore$Ncatch <- replist0$nfishfleets*(t+forecast_start-replist0$endyr-2)
     fore$InputBasis <- 2 ## discards
-    fore$ControlRuleMethod <- 3#ifelse(replist0$SS_versionNumeric < 3.30,1,3) ## 3: ramp does catch=f(SSB), buffer on catch
+    fore$ControlRuleMethod <- ifelse(replist0$SS_versionNumeric < 3.30,1,3) ## 3: ramp does catch=f(SSB), buffer on catch
+    
     
     ## Now Add Catch data/projections thru the year before forecast_start.
     ## We want to overwrite everything because the 2015 etc catches are no longer projections, they are known

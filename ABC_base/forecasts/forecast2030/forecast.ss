@@ -1,7 +1,7 @@
 #C forecast file written by R function SS_writeforecast
 #C rerun model to get more complete formatting in forecast.ss_new
 #C should work with SS version: 3.24
-#C file write time: 2021-02-24 10:00:54
+#C file write time: 2021-02-24 10:50:02
 #
 1 #_benchmarks
 2 #_MSY
@@ -18,13 +18,13 @@
 3 #_ControlRuleMethod
 0.4 #_BforconstantF
 0.1 #_BfornoF
-0.795 #_Flimitfraction
+0.788 #_Flimitfraction
 3 #_N_forecast_loops
 3 #_First_forecast_loop_with_stochastic_recruitment
 0 #_Forecast_loop_control_3
 0 #_Forecast_loop_control_4
 0 #_Forecast_loop_control_5
-2029 #_FirstYear_for_caps_and_allocations
+2030 #_FirstYear_for_caps_and_allocations
 0 #_stddev_of_log_catch_ratio
 0 #_Do_West_Coast_gfish_rebuilder_output
 1999 #_Ydecl
@@ -38,7 +38,7 @@
 -1
 # fleet assignment to allocation group (enter group ID# for each fleet, 0 for not included in an alloc group)
 0 0 0
-36 #_Ncatch
+39 #_Ncatch
 2 #_InputBasis
  #_Year Seas Fleet Catch or F
    2017    1     1  11.915931
@@ -53,29 +53,32 @@
    2020    1     1  24.020000
    2020    1     2  37.680000
    2020    1     3  29.983697
-   2021    1     1  34.690000
-   2021    1     2  58.640000
-   2021    1     3  64.630000
-   2022    1     1  34.650000
-   2022    1     2  58.660000
-   2022    1     3  64.540000
-   2023    1     1  34.620000
-   2023    1     2  58.630000
-   2023    1     3  64.460000
-   2024    1     1  34.590000
-   2024    1     2  58.580000
-   2024    1     3  64.390000
-   2025    1     1  34.580000
-   2025    1     2  58.510000
-   2025    1     3  64.340000
-   2026    1     1  34.570000
-   2026    1     2  58.420000
-   2026    1     3  64.310000
-   2027    1     1  34.580000
-   2027    1     2  58.330000
-   2027    1     3  64.290000
-   2028    1     1  34.590000
-   2028    1     2  58.230000
-   2028    1     3  64.300000
+   2021    1     1  88.150000
+   2021    1     2  17.170000
+   2021    1     3  71.900000
+   2022    1     1  86.940000
+   2022    1     2  16.980000
+   2022    1     3  70.900000
+   2023    1     1  85.770000
+   2023    1     2  16.780000
+   2023    1     3  69.930000
+   2024    1     1  84.640000
+   2024    1     2  16.570000
+   2024    1     3  68.990000
+   2025    1     1  83.650000
+   2025    1     2  16.380000
+   2025    1     3  68.160000
+   2026    1     1  82.610000
+   2026    1     2  16.170000
+   2026    1     3  67.290000
+   2027    1     1  81.610000
+   2027    1     2  15.950000
+   2027    1     3  66.450000
+   2028    1     1  80.760000
+   2028    1     2  15.760000
+   2028    1     3  65.730000
+   2029    1     1  79.850000
+   2029    1     2  15.560000
+   2029    1     3  64.970000
 #
 999 # verify end of input 

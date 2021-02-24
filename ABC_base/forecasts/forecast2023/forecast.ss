@@ -1,7 +1,7 @@
 #C forecast file written by R function SS_writeforecast
 #C rerun model to get more complete formatting in forecast.ss_new
 #C should work with SS version: 3.24
-#C file write time: 2021-02-24 10:44:51
+#C file write time: 2021-02-24 11:03:13
 #
 1 #_benchmarks
 2 #_MSY
@@ -15,7 +15,7 @@
 0.2 #_F_scalar
 #_Fcast_years:  beg_selex, end_selex, beg_relF, end_relF
 0 0 0 0
-3 #_ControlRuleMethod
+1 #_ControlRuleMethod
 0.4 #_BforconstantF
 0.1 #_BfornoF
 0.841 #_Flimitfraction
