@@ -44,11 +44,11 @@
  32 70 53.261 49 0 99 2 0 0 0 0 0.5 0 0 # L_at_Amax_Fem_GP_1
  0.01 0.1 0.0230624 0.035 0 99 2 0 0 0 0 0.5 0 0 # VonBert_K_Fem_GP_1
  0.02 0.5 0.214133 0.1 0 99 2 0 0 0 0 0.5 0 0 # CV_young_Fem_GP_1
- 0.02 0.25 0.095564 0.1 0 99 2 0 0 0 0 0.5 0 0 # CV_old_Fem_GP_1
+ 0.02 0.25 0.0955637 0.1 0 99 2 0 0 0 0 0.5 0 0 # CV_old_Fem_GP_1
  0.02 0.25 0.065 0.058 0 0.013 -5 0 0 0 0 0 0 0 # NatM_p_1_Mal_GP_1
  2 45 12 9 0 99 -3 0 0 0 0 0 0 0 # L_at_Amin_Mal_GP_1
  30 60 46.1244 43 0 99 2 0 0 0 0 0 0 0 # L_at_Amax_Mal_GP_1
- 0.02 0.25 0.0402817 0.09 0 99 2 0 0 0 0 0 0 0 # VonBert_K_Mal_GP_1
+ 0.02 0.25 0.0402818 0.09 0 99 2 0 0 0 0 0 0 0 # VonBert_K_Mal_GP_1
  0.02 0.75 0.250729 0.1 0 99 2 0 0 0 0 0 0 0 # CV_young_Mal_GP_1
  0.02 0.25 0.0651623 0.1 0 99 2 0 0 0 0 0 0 0 # CV_old_Mal_GP_1
  -3 3 1.132e-005 1.01e-005 -1 0.8 -3 0 0 0 0 0 0 0 # Wtlen_1_Fem
@@ -209,26 +209,26 @@
  -15 24 13 13 -1 10 -1 0 0 0 0 0.5 0 0 # SizeSel_1P_2_South.fixed
  -2 9 3.71754 5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_1P_3_South.fixed
  -5 20 11 5 -1 10 -2 0 0 0 0 0.5 0 0 # SizeSel_1P_4_South.fixed
- -20 1 -11.1461 -5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_1P_5_South.fixed
+ -20 1 -11.1459 -5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_1P_5_South.fixed
  -9 19 10 10 -1 10 -2 0 0 0 0 0.5 0 0 # SizeSel_1P_6_South.fixed
- 20 60 43.6745 40 -1 10 3 0 0 0 0 0.5 0 0 # SizeSel_2P_1_Central.fixed
+ 20 60 43.6747 40 -1 10 3 0 0 0 0 0.5 0 0 # SizeSel_2P_1_Central.fixed
  -15 24 10 10 -1 10 -1 0 0 0 0 0.5 0 0 # SizeSel_2P_2_Central.fixed
- -2 9 4.05529 5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_2P_3_Central.fixed
+ -2 9 4.05532 5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_2P_3_Central.fixed
  -5 20 11 5 -1 10 -2 0 0 0 0 0.5 0 0 # SizeSel_2P_4_Central.fixed
- -20 1 -15.4255 -5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_2P_5_Central.fixed
+ -20 1 -15.4862 -5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_2P_5_Central.fixed
  -9 19 10 10 -1 10 -2 0 0 0 0 0.5 0 0 # SizeSel_2P_6_Central.fixed
  20 60 41.1061 40 -1 10 3 0 0 0 0 0.5 2 0 # SizeSel_3P_1_Central.trawl
  -15 24 10 10 -1 10 -1 0 0 0 0 0.5 0 0 # SizeSel_3P_2_Central.trawl
- -2 9 3.90857 5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_3P_3_Central.trawl
+ -2 9 3.90858 5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_3P_3_Central.trawl
  -5 20 11 5 -1 10 -2 0 0 0 0 0.5 0 0 # SizeSel_3P_4_Central.trawl
- -20 1 -15.9919 -5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_3P_5_Central.trawl
+ -20 1 -16.0243 -5 -1 10 4 0 0 0 0 0.5 0 0 # SizeSel_3P_5_Central.trawl
  -9 19 10 10 -1 10 -2 0 0 0 0 0.5 0 0 # SizeSel_3P_6_Central.trawl
- 20 60 43.0181 40 0 99 3 0 0 0 0 0.5 0 0 # SizeSel_4P_1_Triennial
+ 20 60 43.0182 40 0 99 3 0 0 0 0 0.5 0 0 # SizeSel_4P_1_Triennial
  0.001 20 11.3831 6 0 99 3 0 0 0 0 0.5 0 0 # SizeSel_4P_2_Triennial
  0 20 1 1 0 99 -3 0 0 0 0 0.5 0 0 # SizeSel_5P_1_NWFSC.slope
  20 30 30 30 0 99 -2 0 0 0 0 0.5 0 0 # SizeSel_5P_2_NWFSC.slope
- 16 60 26.7264 40 0 99 3 0 0 0 0 0.5 0 0 # SizeSel_6P_1_NWFSC.combo
- 0.001 20 15.1387 6 0 99 3 0 0 0 0 0.5 0 0 # SizeSel_6P_2_NWFSC.combo
+ 16 60 26.7265 40 0 99 3 0 0 0 0 0.5 0 0 # SizeSel_6P_1_NWFSC.combo
+ 0.001 20 15.1388 6 0 99 3 0 0 0 0 0.5 0 0 # SizeSel_6P_2_NWFSC.combo
  0 20 1 1 0 99 -3 0 0 0 0 0.5 0 0 # SizeSel_7P_1_ghost.South
  20 30 30 30 0 99 -2 0 0 0 0 0.5 0 0 # SizeSel_7P_2_ghost.South
  0 20 1 1 0 99 -3 0 0 0 0 0.5 0 0 # SizeSel_8P_1_ghost.cenfix

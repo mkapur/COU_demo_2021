@@ -1,5 +1,5 @@
 SS-V3.24U-safe;_08/29/2014;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.2_Win64
-Wed Feb 24 10:45:34 2021
+Wed Feb 24 11:03:58 2021
 
 bgill.2017_dat.dat  datfilename
 bgill.2017_control.ctl  ctlfilename
@@ -378,7 +378,7 @@ Forecast selected; next 20 input values will be read as a block then parsed and 
 0.2 Fmult value used only if Do_Forecast==5
  0 0 0 0 Begin-end yrs for average selex; begin-end yrs for allocation
  2016 2016 2016 2016  After Transformation:  begin-end yrs for average selex; begin-end yrs for rel F
-3  HarvestPolicy 
+1  HarvestPolicy 
 0.4  H4010_top 
 0.1  H4010_bot 
 0.833  H4010_scale 
@@ -464,7 +464,7 @@ Processed
  -1 0
  -1 0
  -1 0
- -1 0
+ -1 9.82392e+252
  -1 0
  -1 0
  -1 0
@@ -477,7 +477,7 @@ Processed
  -1 0
  -1 0
  -1 3.76618e+174
- -1 3.76617e+174
+ -1 3.70658e-317
  done reading forecast 
 
 
@@ -731,16 +731,16 @@ Create reverse pointers to discard observations
 
 **************************************
  ready to do biological and selectivity calculations once 
- initial bio parameters:  0.063 12 53.2116 0.0227519 0.216564 0.0962738 0.065 12 46.0037 0.0397187 0.254564 0.0652228 1.132e-005 3.1006 33.4 -0.35 159.473 95 1.132e-005 3.1006 0 0 0 0
+ initial bio parameters:  0.063 12 53.2387 0.0234137 0.212812 0.094851 0.065 12 46.3926 0.040286 0.253674 0.0649757 1.132e-005 3.1006 33.4 -0.35 159.473 95 1.132e-005 3.1006 0 0 0 0
   growth factors that cannot be time-varying: 
 seasonal K:  1 1
 seasonal wtlen adjuster 
  1 1 1 1 1 1 1 1
  1 1 1 1 1 1 1 1
-CV_at_age_min(for each morph and gender)  0.216564 0.254564
-CV_at_age_max(for each morph and gender)  0.0962738 0.0652228
-Adjusted size at maxage: 54.4953
-Adjusted size at maxage: 46.3432
+CV_at_age_min(for each morph and gender)  0.212812 0.253674
+CV_at_age_max(for each morph and gender)  0.094851 0.0649757
+Adjusted size at maxage: 54.4605
+Adjusted size at maxage: 46.7242
  did natmort 
  0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063 0.063
  0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065 0.065
@@ -748,5 +748,5 @@ Adjusted size at maxage: 46.3432
  made the age_age' key 
 bias_adjustment vector:  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 start initial conditions 
-Adjusted size at maxage: 54.4953
-Adjusted size at maxage: 46.3432
+Adjusted size at maxage: 54.4605
+Adjusted size at maxage: 46.7242

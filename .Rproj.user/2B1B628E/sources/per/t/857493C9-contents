@@ -1,5 +1,4 @@
 #' SS_autoForecast
-#'
 #' \code{SS_autoForecast} beta version of tool to automate catch-only update iterations
 #' hopefully port to r4ss when ready
 #' @param rootdir  somewhere you'd like the forecasting iteration in folders created, eg forecast202X
@@ -164,7 +163,7 @@ SS_autoForecastTEMP <- function(rootdir,
     cat(paste0('Added forecast catch thru year ',forecast_start+(t-2),"\n"))
     
     ## save file
-    SS_writeforecastMK(fore, file = './forecast.ss',
+    kaputils::SS_writeforecastMK(fore, file = './forecast.ss',
                        overwrite = TRUE)
     # r4ss::SS_writeforecast(fore, file = './forecast.ss',
     #                    overwrite = TRUE)
