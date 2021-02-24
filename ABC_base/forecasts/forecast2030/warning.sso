@@ -1,0 +1,19 @@
+SS-V3.24U-safe;_08/29/2014;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.2_Win64
+Wed Feb 24 10:00:01 2021
+
+ parameter init value is less than parameter min 0 < 20
+ parameter init value is greater than parameter max 46.1322 > 9
+ parameter init value is greater than parameter max 3.71754 > 1
+ parameter init value is less than parameter min -11.1459 < 20
+ parameter init value is greater than parameter max 43.6745 > 9
+ parameter init value is greater than parameter max 4.05529 > 1
+ parameter init value is less than parameter min -15.3919 < 20
+ parameter init value is greater than parameter max 41.1061 > 9
+ parameter init value is greater than parameter max 3.90857 > 1
+ parameter init value is less than parameter min -16.0456 < 20
+ parameter init value is less than parameter min 1 < 16
+ parameter init value is greater than parameter max 30 > 20
+ parameter init value is greater than parameter max 1 > 0
+ parameter init value is greater than parameter max 30 > 2
+ adjusted selparm out of bounds (Parm#, yr, min, max, base, value) 21 1950 0 20 43.0182 43.0182
+ adjusted selparm out of bounds (Parm#, yr, min, max, base, value) 22 1950 20 30 11.3831 11.3831

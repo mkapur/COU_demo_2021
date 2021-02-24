@@ -1,0 +1,22 @@
+## demonstration of COU automation using dummy blackgill data
+## kapurm@uw.edu
+
+require(r4ss)
+# devtools::install_github('mkapur/kaputils')
+require(kaputils)
+require(here)
+require(dplyr)
+
+source(here('ss_autoforecastTEMP.r'))
+
+
+SS_autoForecastTEMP(rootdir = here('ABC_base'), ## folder which has the base run
+                basedir = "base_2015",
+                catch_proportions = catch_projections[catch_projections$YEAR==2021,5:ncol(catch_projections)],
+                state = 'base', ## old version was 'low/high'; base fits to par
+                statesex = 2, ## 2 sex model
+                statevals = c(0.063,0.065),
+                forecast_start = 2021,
+                forecast_end = 2031,
+                fixed_catches = catch_projections[catch_projections$YEAR<2021,5:ncol(catch_projections)],
+                Flimitfraction = catch_projections$PSTAR_0.45[catch_projections$YEAR >2020])

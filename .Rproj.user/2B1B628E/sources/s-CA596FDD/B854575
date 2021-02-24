@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1614184844536.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B854575",
+    "lastKnownWriteTime" : 1614190293,
+    "last_content_update" : 1614190519524,
+    "path" : "C:/Users/mkapur/Dropbox/UW/assessments/COU_demo_2021/runCOUdemo.R",
+    "project_path" : "runCOUdemo.R",
+    "properties" : {
+        "cursorPosition" : "18,38",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
